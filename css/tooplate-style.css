@@ -127,18 +127,39 @@ footer a:link, footer a:visited {
   color: #c5c7c6;
   line-height: 1.8;
 }
+.center {
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+}
+div.scroll {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 700px;
+  height: 800px;
+  overflow: scroll;
+}
+
+.tm-textbox-4 {
+  padding: 40px 40px 40px;
+}
 
 .tm-textbox-2 {
   padding: 60px 40px 60px;
 }
-
+/* Intro */
 .tm-section-0 {
   margin-top: 70px;
   max-width: 575px;
 }
+/* About me */
 .tm-section-1 {
   margin-top: 70px;
   max-width: 575px;
+}
+/* Posts */
+.tm-section-2 {
+  margin-top: -350px;
+  max-width: 1600px;
 }
 
 .tm-link:link,
@@ -183,6 +204,9 @@ footer {
 }
 
 /* Image Gallery */
+.tm-section-3 {
+}
+
 .tm-gallery {
   max-width: 860px;
   margin: 0 auto;
@@ -362,7 +386,7 @@ figure.effect-goliath:hover p {
 }
 
 /* Contact */
-.tm-section-3 {
+.tm-section-4 {
   width: 100%;
   max-width: 400px;
   margin-left: 40px;
