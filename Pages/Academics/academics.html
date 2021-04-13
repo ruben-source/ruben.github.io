@@ -3,11 +3,62 @@
 <title>CV- Robin Nilsson</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="w3-css/w3.css">
+<link rel="stylesheet" href="w3-css/roboto.css">
+<!--<link rel="stylesheet" href="w3-css/font-awesome.min.css">-->
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+h2 { margin-right: 200pt;display: inline-block;}
+
+.h22 { margin-right: 100pt;display: inline-block; font-size: 30px;font-family: "Roboto", sans-serif;}
+
+.button2 {
+  background-color: #009688!important; /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 0px 0px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.round-button {border-radius: 100%;}
+
+.arrow a:before{content: '\21A9';}
+
+.button {
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #009688!important;
+}
+
+.button1:hover {
+  background-color: #009688!important;
+  color: white;
+}
+
 </style>
 <body class="w3-light-grey">
 
@@ -27,7 +78,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
         </div>
         <div class="w3-container">
-        <h2>Robin Nilsson </h2>
+        <h3>Robin Nilsson </h3>
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer - Biomedical applications</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Gothenburg, Sweden</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>robinmattias@hotmail.com</p>
@@ -81,11 +132,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- End Left Column -->
     </div>
 
+    <a href="https://ruben-source.github.io/ruben.github.io/" class="button2 round-button">Home</a>
+
     <!-- Right Column -->
     <div class="w3-twothird">
     
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
+      <div id="work-p1" class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience / Projects</h2>
+        <button id="wb1" onclick="nextWorkPage(this.id)" class="button button1">1</button>
+        <button id="wb2" onclick="nextWorkPage(this.id)" class="button button1">2</button>
+
         <div class="w3-container">
           <h5 class="w3-opacity"><b> Dry Lab / Wiki - <a href="https://igem.org/Main_Page?fbclid=IwAR2iU6XvUHvD3PV71ghbmYSdyJGtlHGng_5xVhuVFreALXPrsZVaL_LODns" target="_blank">iGEM</a></b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mars 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
@@ -114,29 +170,83 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         </div>
       </div>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+      <div id="work-p2" class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience / Projects</h2>
+        
+        <button id="wb1" onclick="nextWorkPage(this.id)" class="button button1">1</button>
+        <button id="wb2" onclick="nextWorkPage(this.id)" class="button button1">2</button>
+
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Biomedical Engineering</b></h5>
+          <h5 class="w3-opacity"><b> --  </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i></h6>
+          <p> </p>
+          <hr>
+        </div>
+      </div>
+
+      <div id="ep1" class="w3-container w3-card w3-white">
+        <div class="h22 w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</div>
+        <button id="eb1" onclick="EducationPage(this.id)" class="button button1">1</button>
+        <button id="eb2" onclick="EducationPage(this.id)" class="button button1">2</button>
+        <button id="eb3" onclick="EducationPage(this.id)" class="button button1">Course Selection</button>
+        <button id="eb4" onclick="EducationPage(this.id)" class="button button1">Papers</button>
+        
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Biomedical Engineering - <a href="https://www.chalmers.se/en/Pages/default.aspx" target="_blank">Chalmers University</a></b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
           <p>Special academic interest and direction in medical image analysis, diagnostic imaging, AI and bioinformatics. </p>
           <p>Master Degree</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Engineering mathematics and computational science</b></h5>
+          <h5 class="w3-opacity"><b>Engineering mathematics and computational science - <a href="https://www.chalmers.se/en/Pages/default.aspx" target="_blank">Chalmers University</a></b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2020</h6>
           <p>One year honing my skills in computer science and deepening my knowledge in mathematics. </p>
           <p>Master Degree</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Engineering mathematics</b></h5>
+          <h5 class="w3-opacity"><b>Engineering mathematics - <a href="https://www.chalmers.se/en/Pages/default.aspx" target="_blank">Chalmers University</a></b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2019</h6>
           <p>Bachelor Degree</p><br>
         </div>
       </div>
 
+      <div id="ep2" class="w3-container w3-card w3-white">
+        <div class="h22 w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</div>
+        <button id="eb1" onclick="EducationPage(this.id)" class="button button1">1</button>
+        <button id="eb2" onclick="EducationPage(this.id)" class="button button1">2</button>
+        <button id="eb3" onclick="EducationPage(this.id)" class="button button1">Course Selection</button>
+        <button id="eb4" onclick="EducationPage(this.id)" class="button button1">Papers</button>
+        
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Teknik programmet - <a href="https://vadsbogymnasiet.se/" target="_blank">Vadsbogymnasiet</a></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2013 - June 2016</h6>
+          <p>Vadsbogymnasiet</p>
+          <p>Gymnasium</p>
+          <hr>
+        </div>
+      </div>
+
+      <div id="courses" class="w3-container w3-card w3-white">
+        <div class="h22 w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</div>
+        <button id="eb1" onclick="EducationPage(this.id)" class="button button1">1</button>
+        <button id="eb2" onclick="EducationPage(this.id)" class="button button1">2</button>
+        <button id="eb3" onclick="EducationPage(this.id)" class="button button1">Course Selection</button>
+        <button id="eb4" onclick="EducationPage(this.id)" class="button button1">Papers</button>
+        
+        <p>--</p>
+      </div>
+
+      <div id="papers" class="w3-container w3-card w3-white">
+        <div class="h22 w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</div>
+        <button id="eb1" onclick="EducationPage(this.id)" class="button button1">1</button>
+        <button id="eb2" onclick="EducationPage(this.id)" class="button button1">2</button>
+        <button id="eb3" onclick="EducationPage(this.id)" class="button button1">Course Selection</button>
+        <button id="eb4" onclick="EducationPage(this.id)" class="button button1">Papers</button>
+        
+        <p></p>
+      </div>
     <!-- End Right Column -->
     </div>
     
@@ -156,6 +266,65 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <i class="fa fa-linkedin w3-hover-opacity"></i>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+<script>
+  // Default display
+  var x = document.getElementById("work-p1")
+  x.style.display = "block";
+  var y = document.getElementById("work-p2")
+  y.style.display = "none";
 
+  document.getElementById("ep1").style.display = "block";
+  document.getElementById("ep2").style.display = "none";
+  document.getElementById("courses").style.display = "none";
+  document.getElementById("papers").style.display = "none";
+
+  function nextWorkPage(buttonId) {
+    var x = document.getElementById("work-p1");
+    var y = document.getElementById("work-p2");
+
+
+    if (buttonId === "wb1") {
+      x.style.display = "block";
+      y.style.display = "none";
+    } else if (buttonId == "wb2"){
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+
+  function EducationPage(buttonId) {
+    var x = document.getElementById("ep1");
+    var y = document.getElementById("ep2");
+    var z = document.getElementById("courses");
+    var t = document.getElementById("papers");
+
+
+    if (buttonId === "eb1") {
+      x.style.display = "block";
+      y.style.display = "none";
+      z.style.display = "none";
+      t.style.display = "none";
+    } else if (buttonId == "eb2"){
+      x.style.display = "none";
+      y.style.display = "block";
+      z.style.display = "none";
+      t.style.display = "none";
+    } else if (buttonId == "eb3"){
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "block";
+      t.style.display = "none";
+    } else if (buttonId == "eb4"){
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "none";
+      t.style.display = "block";
+    }
+  }
+
+</script>
 </body>
 </html>
